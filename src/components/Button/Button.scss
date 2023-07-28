@@ -70,6 +70,9 @@
         background-color: darken($button-bg, 5%);
         box-shadow: 0 2px 25px rgba(255, 0, 130, 0.2);
     }
+    &:hover{
+        background-color: darken($alt-color, 5%);
+    }
 
     &.animate{
         &:before{

@@ -11,7 +11,7 @@ function SpinningObject(props: SpinningObjectType) {
         <div className={"spinning_object " + props.className}>
             <p className="spinning_object_text">{props.text}</p>
 
-            <img className="spinning_object_icon" src={props.icon} alt="icon"/>
+            <img className="spinning_object_icon" src={props.icon} alt="spin_icon"/>
         </div>
     );
 }

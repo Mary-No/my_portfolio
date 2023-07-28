@@ -9,6 +9,11 @@ import iconSass from "../../images/technologies_icons/icon_sass.svg"
 import iconGit from "../../images/technologies_icons/icon_git.svg"
 import iconTs from "../../images/technologies_icons/icon_ts.svg"
 import iconWebpack from "../../images/technologies_icons/icon_webpack.svg"
+import ContactIcon from "../ContactIcon/ContactIcon";
+import iconCall from "../../images/contacts_icons/call.svg"
+import iconGithub from "../../images/contacts_icons/github.svg"
+import iconGmail from "../../images/contacts_icons/gmail.svg"
+import iconLinkedin from "../../images/contacts_icons/linkedin.svg"
 
 
 function AboutMeSection() {
@@ -23,7 +28,13 @@ function AboutMeSection() {
     ]
     const mappingSpinObjects = technologies.map((elem) => <SpinningObject icon={elem.icon} text={elem.text} className={elem.className}/>)
 
-
+    const contacts = [
+        {icon: iconCall, className:"iconCall", link:"tel:+48790854166"},
+        {icon: iconGithub, className:"iconGithub", link:"https://github.com/Mary-No"},
+        {icon: iconGmail, className:"iconGmail", link:"mailto:novik.work.mail@gmail.com"},
+        {icon: iconLinkedin, className:"iconLinkedin", link:"https://www.linkedin.com/in/maria-novik-385861229/"},
+    ]
+    const mappingContactsObjects = contacts.map((elem) => <ContactIcon className={elem.className} icon={elem.icon} link={elem.link}/>)
     return (
         <div className="about_me_section">
             <div className="about_me_text">
@@ -33,7 +44,9 @@ function AboutMeSection() {
                     <p className="about_me_description_more">Я страстно увлечена созданием красивых и функциональных
                         веб-сайтов. <br/>Хочу найти работу, где смогу применить свои навыки и внести свой вклад в
                         развитие современного веб-пространства.</p>
-
+                </div>
+                <div className="about_me_contacts_icons">
+                    {mappingContactsObjects}
                 </div>
             </div>
                 <div className="about_me_photo">
@@ -45,9 +58,7 @@ function AboutMeSection() {
                     </div>
                 </div>
 
-            <div className="about_me_contacts_icons">
 
-            </div>
         </div>
     );
 }
