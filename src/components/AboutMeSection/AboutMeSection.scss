@@ -1,0 +1,43 @@
+@import "../../index";
+.about_me_section{
+  padding-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+.about_me_description{
+  font-size: 22px;
+  max-width: 500px;
+  padding-top: 30px;
+}
+.about_me_description_welcome{
+  font-size: 34px;
+  font-weight: 500;
+  margin-bottom: 55px;
+}
+
+.about_me_photo{
+  padding-top: 70px;
+}
+.about_me_round_person{
+  position: relative;
+  width: 396px;
+  height: 396px;
+  border: 4px dashed $accent-color;
+  border-radius: 50%;
+  background: #CCE8FF;
+
+}
+.about_me_person{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 396px;
+  border-radius: 50%;
+}
+
+
+.spinning_objects_container{
+  position: relative;
+}
+
+

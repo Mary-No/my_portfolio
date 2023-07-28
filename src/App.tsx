@@ -1,9 +1,9 @@
 import React from 'react';
 import './App.css';
 import Header from "./components/Header/Header";
-import AboutMeSection from "./components/AboutMeSection/AboutMeSection";
 import MyProjects from "./components/MyProjects/MyProjects";
 import ProfessionalQuality from "./components/ProfessionalQuality/ProfessionalQuality";
+import AboutMeSection from "./components/AboutMeSection/AboutMeSection";
 
 function App() {
   return (

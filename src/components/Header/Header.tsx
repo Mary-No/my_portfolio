@@ -1,6 +1,8 @@
 import React from 'react';
 import './Header.scss';
+import Button from "../Button/Button";
 function Header() {
+
     return (
       <div className="header">
           <ul className="header-menu">
@@ -8,7 +10,7 @@ function Header() {
               <li className="header-menu-item">Опыт работы</li>
               <li className="header-menu-item">Навыки</li>
           </ul>
-          <button className="header-btn">Связаться</button>
+          <Button/>
       </div>
     );
 }

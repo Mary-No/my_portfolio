@@ -3,15 +3,16 @@
   margin: 0;
   padding: 0;
   font-family: 'Ysabeau Infant', sans-serif;
+  color: #333333;
 }
-:root {
-  --bg-color: #F3F3FF;
-  --accent-yellow: #FFD700;
-  --accent-green: #7FFF00;
-}
+$alt-color:#ff556f ;
+$fuschia: #ff0081;
+$button-bg: $fuschia;
+$bg-color: #F3F3FF;
+$accent-color: #64B5F6;
 
 body {
-  background-color: var(--bg-color);
+  background-color: $bg-color;
 
 }
 

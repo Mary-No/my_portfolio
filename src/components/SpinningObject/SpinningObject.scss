@@ -1,0 +1,106 @@
+@import "../../index";
+.spinning_object{
+  width: 90px;
+  height: 90px;
+  background: $alt-color;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: -512px;
+  left: 155px;
+  transform-origin: 45px 310px;
+}
+.spinning_object_icon{
+  width: 40px;
+  height: 40px;
+}
+.spinning_object_text{
+  font-weight: 600;
+  font-size: 18px;
+  color: $bg-color;
+  text-transform: uppercase;
+}
+.iconJs{
+  transform: rotate(0deg);
+  animation: movingJs 18s infinite linear;
+}
+.iconReact{
+  background-color: $accent-color;
+  transform: rotate(51deg);
+  animation: movingReact 18s infinite linear;
+}
+.iconHtml{
+  background-color: #ffdc8e;
+  transform: rotate(103deg);
+  animation: movingHtml 18s infinite linear;
+}
+.iconSass{
+  transform: rotate(154deg);
+  animation: movingSass 18s infinite linear;
+}
+.iconGit{
+  background-color: $accent-color;
+  transform: rotate(90deg);
+  animation: movingGit 18s infinite linear;
+}
+.iconTs{
+  background-color: #ffdc8e;
+  transform: rotate(257deg);
+  animation: movingTs 18s infinite linear;
+}
+.iconWebpack{
+  background-color: $accent-color;
+  transform: rotate(308deg);
+  animation: movingWebpack 18s infinite linear;
+
+}
+@keyframes movingJs {
+  from {
+    transform: rotate(0deg);
+  } to
+    {transform: rotate(-360deg);}
+}
+@keyframes movingReact {
+  from {
+    transform: rotate(51deg);
+  } to
+   {transform: rotate(-309deg);}
+}
+@keyframes movingHtml {
+  from {
+    transform: rotate(103deg);
+  } to
+    {transform: rotate(-257deg);}
+}
+@keyframes movingSass {
+  from {
+    transform: rotate(154deg);
+  } to
+    {transform: rotate(-206deg);}
+}
+@keyframes movingGit {
+  from {
+    transform: rotate(206deg);
+  } to
+    {transform: rotate(-154deg);}
+}
+@keyframes movingTs {
+  from {
+    transform: rotate(257deg);
+  } to
+    {transform: rotate(-103deg);}
+}
+@keyframes movingWebpack {
+  from {
+    transform: rotate(308deg);
+  } to
+    {transform: rotate(-52deg);}
+}
+
+.spinning_object {
+  transform-origin: 51px 309px;
+}
+
