@@ -1,3 +1,8 @@
+@import "../../index";
+.iconCall{
+  width: 41px;
+  height: 41px;
+}
 .iconGithub{
   width: 52px;
   height: 52px;
@@ -6,12 +11,24 @@
   width: 52px;
   height: 52px;
 }
-.iconCall{
-  width: 41px;
-  height: 41px;
-}
 .iconLinkedin{
   width: 41px;
   height: 41px;
   margin-left: 6px;
 }
+.iconCall:hover{
+  g{
+  fill: $active-red;
+}}
+.iconGithub:hover{
+  g{
+  fill: #00199a;
+}}
+.iconGmail:hover{
+  g{
+    fill: #ffb70d;
+  }}
+.iconLinkedin:hover{
+  g{
+    fill: $active-red;
+  }}

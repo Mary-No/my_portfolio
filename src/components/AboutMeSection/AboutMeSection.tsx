@@ -10,11 +10,6 @@ import iconGit from "../../images/technologies_icons/icon_git.svg"
 import iconTs from "../../images/technologies_icons/icon_ts.svg"
 import iconWebpack from "../../images/technologies_icons/icon_webpack.svg"
 import ContactIcon from "../ContactIcon/ContactIcon";
-import iconCall from "../../images/contacts_icons/call.svg"
-import iconGithub from "../../images/contacts_icons/github.svg"
-import iconGmail from "../../images/contacts_icons/gmail.svg"
-import iconLinkedin from "../../images/contacts_icons/linkedin.svg"
-
 
 function AboutMeSection() {
     const technologies = [{text: "HTML", icon: iconHtml, className: "iconHtml"},
@@ -29,12 +24,12 @@ function AboutMeSection() {
     const mappingSpinObjects = technologies.map((elem) => <SpinningObject icon={elem.icon} text={elem.text} className={elem.className}/>)
 
     const contacts = [
-        {icon: iconCall, className:"iconCall", link:"tel:+48790854166"},
-        {icon: iconGithub, className:"iconGithub", link:"https://github.com/Mary-No"},
-        {icon: iconGmail, className:"iconGmail", link:"mailto:novik.work.mail@gmail.com"},
-        {icon: iconLinkedin, className:"iconLinkedin", link:"https://www.linkedin.com/in/maria-novik-385861229/"},
+        {className:"iconCall", link:"tel:+48790854166"},
+        {className:"iconGithub", link:"https://github.com/Mary-No"},
+        {className:"iconGmail", link:"mailto:novik.work.mail@gmail.com"},
+        {className:"iconLinkedin", link:"https://www.linkedin.com/in/maria-novik-385861229/"},
     ]
-    const mappingContactsObjects = contacts.map((elem) => <ContactIcon className={elem.className} icon={elem.icon} link={elem.link}/>)
+    const mappingContactsObjects = contacts.map((elem) => <ContactIcon className={elem.className} link={elem.link}/>)
     return (
         <div className="about_me_section">
             <div className="about_me_text">

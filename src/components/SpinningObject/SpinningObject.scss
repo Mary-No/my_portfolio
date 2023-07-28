@@ -33,7 +33,7 @@
   animation: movingReact 18s infinite linear;
 }
 .iconHtml{
-  background-color: #ffdc8e;
+  background-color: $accent-color2;
   transform: rotate(103deg);
   animation: movingHtml 18s infinite linear;
 }
@@ -47,7 +47,7 @@
   animation: movingGit 18s infinite linear;
 }
 .iconTs{
-  background-color: #ffdc8e;
+  background-color: $accent-color2;
   transform: rotate(257deg);
   animation: movingTs 18s infinite linear;
 }

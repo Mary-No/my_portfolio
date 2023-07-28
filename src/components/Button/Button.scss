@@ -3,13 +3,14 @@
     display: inline-block;
     font-size: 1em;
     padding: 1em 2em;
+    letter-spacing: 0.8px;
 
     text-transform: uppercase;
     font-weight: 600;
     -webkit-appearance: none;
     appearance: none;
     background-color: $alt-color;
-    color: $bg-color;
+    color: #fff;
     border-radius: 4px;
     border: none;
     cursor: pointer;
@@ -71,7 +72,7 @@
         box-shadow: 0 2px 25px rgba(255, 0, 130, 0.2);
     }
     &:hover{
-        background-color: darken($alt-color, 5%);
+        background-color: darken($active-red, 5%);
     }
 
     &.animate{
